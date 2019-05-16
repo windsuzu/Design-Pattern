@@ -21,10 +21,10 @@ import 'package:design_pattern_dart/Behavioral/Iterator.dart';
 import 'package:design_pattern_dart/Behavioral/Mediator.dart';
 import 'package:design_pattern_dart/Behavioral/Memento.dart';
 import 'package:design_pattern_dart/Behavioral/Observer.dart';
+import 'package:design_pattern_dart/Behavioral/Visitor.dart';
 import 'package:design_pattern_dart/Behavioral/State.dart' as StatePattern;
 import 'package:design_pattern_dart/Behavioral/Strategy.dart';
 import 'package:design_pattern_dart/Behavioral/Template.dart';
-import 'package:design_pattern_dart/Behavioral/Visitor.dart';
 
 void main() => runApp(MyApp());
 
@@ -62,10 +62,10 @@ List list = <dynamic>[
   Mediator(),
   Memento(),
   Observer(),
-  StatePattern.State(),
-  Strategy(),
-  Template(),
   Visitor(),
+  Strategy(),
+  StatePattern.State(),
+  Template(),
 ];
 
 class MyHomePage extends StatefulWidget {
