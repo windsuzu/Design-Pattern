@@ -12,6 +12,80 @@
     * Strategy, Observer, State, Command, Iterator, Template, ...
 
 
+## Before Design Pattern
+
+### SOLID 原則
+
+* 單一職責原則 (Single responsibility principle, SRP)
+
+  每個物件，不管是 class 還是 function，其功能都應該專注於一件事上。
+
+  同時做兩件以上的事情，不但閱讀性降低，出錯時也更難找到問題點。
+
+
+
+* 開放封閉原則 (Open-Close principle, OCP)
+
+  > 藉由**增加新的程式碼**來擴充系統的功能，而不是藉由**修改原本已經存在的程式碼**來擴充系統的功能。
+
+  當未來需求有異動時，在不變動現在正常運行的程式碼之下，藉由其他方式新增程式碼，實作新需求。
+
+  如果為了新需求而動到原有程式碼，可能會造成其他呼叫原本程式碼的功能發生非預期錯誤。
+
+
+
+* 里氏替換原則 (Liskov substitution principle, LSP)
+
+  子類可以擴充套件父類的功能，但不能改變父類原有的功能。
+
+  > 關於 LSP 的[介紹以及舉例](http://glj8989332.blogspot.com/2018/03/design-pattern-liskov-substitution.html)
+
+
+
+* 接口隔離原則 (Interface segregation principle, ISP)
+
+  不同需求的 client 應該要開放對應需求的**最小化接口**，避免不相關的介面擠在一起。
+
+  > 關於 ISP 的[介紹以及舉例](https://nicole929chan.wordpress.com/2017/03/03/solid-%E6%8E%A5%E5%8F%A3%E9%9A%94%E9%9B%A2%E5%8E%9F%E5%89%87/)
+
+
+
+* 依賴反轉原則 (Dependency inversion principle, DIP)
+
+  高階模組不應該直接依賴低階模組，兩者都應該要依賴於抽象。
+
+  > 關於 DIP 的[介紹以及舉例](https://medium.com/@f40507777/%E4%BE%9D%E8%B3%B4%E5%8F%8D%E8%BD%89%E5%8E%9F%E5%89%87-dependency-inversion-principle-dip-bc0ba2e3a388)
+
+
+
+### DRY 原則
+
+> Do not repeat yourself
+
+旨在軟體開發中，減少重複的資訊。
+
+因為『關於系統裡每一個資訊與行為的片段都存在單一、合理的地方。』
+
+相關文章可以參考[這裡](https://ithelp.ithome.com.tw/articles/10100309)。
+
+
+
+### KISS 原則
+
+> Keep it simple and stupid
+
+
+
+### YAGNI 原則
+
+> You Ain't Gonna Need It
+
+意思是我們不應該為程式碼加入尚未用到的功能，但我想這邊不包含未雨綢繆而寫的擴充程式碼，
+
+而是指新手在剛學習完 Design pattern 時，為了 pattern 而 pattern；
+
+而不是拿來當作不求進步的藉口，YAGNI 只是提醒我們找尋一個合適平衡點。
+
 
 ## 種類一 Creational Design Pattern
 ### 🍕 Simple Factory
